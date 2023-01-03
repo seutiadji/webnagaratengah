@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurusan Page</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/jurusan.css">
+    <link rel="shortcut icon" href="img/logo1.png">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+</head>
+<body>
+    <div class="page" id="page">
+        <!-- nav start -->
+        <nav id="nav" class="nav">
+            <a href='index.html#home' class="logo">  
+                <img src="img/logo1.png" alt="img">
+                <h3 class="">Desa Nagaratengah</h3>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">home</a></li>
+                <li><a href="index.html#tentang">tentang kami</a></li>
+                <li class="inNavigate"><a href="index.html#jurusan">fasilitas</a></li>
+                <li><a href="index.html#prestasi">struktur organisasi</a></li>
+                <li><a href="index.html#ekstrakulikuler">Ekstrakulikuler</a></li>
+                <li><a href="index.html#berita">berita</a></li>
+            </ul>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- nav end -->
+        
+        <section class="container-jurusan">
+            <h1 id="judul-jurusan">Fasilitas</h1>
+
+            <div class="jurusan-page j-tkj" id="tkj">
+                <div class="img-jurusan">
+                    <img src="img/posyandu.jpg" alt="tkj">
+                </div>
+                <div class="content-jurusan">
+                    <h3>Posyandu</h3>
+                    <span>Kegiatan Posyandu yang rutin dilakukan satu minggu sekali</span>
+                    <ul class="pel-jurusan">
+                        <li>Program kesehatan ibu hamil</li>
+                        <li>Program kesehatan anak</li>
+                        <li>Keluarga Berencana (KB)</li>
+                        <li>Imunisasi</li>
+                        <li>Pemantauan status gizi</li>
+                        
+                    </ul>
+                </div>
+            </div> 
+
+            <div class="jurusan-page j-akl" id="akl">
+                <div class="img-jurusan">
+                    <img src="img/puskesmas.jpg" alt="akl">
+                </div>
+                <div class="content-jurusan">
+                    <h3>Puskesmas</h3>
+                    <span>Kami Melayani</span>
+                    <ul class="pel-jurusan">
+                        <li>Layanan Pemeriksaan umum.</li>
+                        <li>Layanan Kesehatan Gigi dan Mulut</li>
+                        <li>ayanan KIA - KB</li>
+                        <li>Layanan Farmasi</li>
+                        <li>Layanan Laboratorium</li>
+                    </ul>
+                </div>
+            </div> 
+
+            <div class="jurusan-page j-pm" id="pm">
+                <div class="img-jurusan">
+                    <img src="img/sd.jpg" class="img-jurusan" alt="pm">
+                </div>
+                <div class="content-jurusan">
+                    <h3>Sarana Pendidikan</h3>
+                    <span>SD Nagaratengah</span>
+                    <ul class="pel-jurusan">
+                    </ul>
+                </div> 
+            </div>
+
+            
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col main-col">
+                        <div class="title">
+                            <img src="img/logo1.png" alt="">
+                            <div class="logo">
+                                <h4>Desa Nagaratengah</h4>
+                            </div>
+                        </div>
+                        <p>SMK Kristen Immanuel menjadi unit Sekolah Kristen Immanuel yang sangat bersemangat mengembangkan bakat siswa serta membentuk produk teknologi dan pengembangan bisnis dari setiap peserta didik. Dijiwai motto yang kuat, sekolah ini membawa keluarga besarnya untuk sukses.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Tautan</h4>
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#tentang">Tentang Kami</a></li>
+                            <li><a href="index.html#jurusan">Jurusan</a></li>
+                            <li><a href="index.html#prestasi">Prestasi</a></li>
+                            <li><a href="index.html#ekstrakulikuler">Ekstrakulikuler</a></li>
+                            <li><a href="index.html#berita">Berita Terbaru</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="https://www.tiktok.com/@smkimmanuelptk"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="https://www.youtube.com/c/SMKImmanuelPontianak"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/smkimmanuelptk/"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        window.onscroll = function(){
+            const nav = document.querySelector('#nav');
+            const fixedNav = nav.offsetTop;
+
+            if (window.pageYOffset > fixedNav){
+                nav.classList.add('navbar-fixed');
+            }else {
+                nav.classList.remove('navbar-fixed');
+            }   
+        }
+
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('nav .nav-links')
+        burger.addEventListener('click', function(){
+            burger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+
+
+    </script>
+</body>
+</html>
