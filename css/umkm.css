@@ -204,12 +204,12 @@ nav .nav-links li.inNavigate a {
 
 /* nav end */
 
-.container-jurusan {
+.container-umkm {
     width: 100vw;
     overflow: hidden;
 }
 
-.container-jurusan h1 {
+.container-umkm h1 {
     text-align: center;
     font-size: 3rem;
     color: var(--dark-dark-blue);
@@ -218,7 +218,7 @@ nav .nav-links li.inNavigate a {
     font-weight: 700;
 }
 
-.jurusan-page {
+.umkm-page {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -229,11 +229,11 @@ nav .nav-links li.inNavigate a {
     position: relative;
     /* line up there for pm design */
 }
-.j-akl.jurusan-page {
+.j-akl.umkm-page {
     flex-direction: row-reverse;
 }
 
-.jurusan-page .img-jurusan{
+.umkm-page .img-umkm{
     width: 25rem;
     height: 30rem;
     position: relative;
@@ -242,7 +242,7 @@ nav .nav-links li.inNavigate a {
     /* margin: auto; */
 
 }
-.j-tkj .img-jurusan::before{
+.j-tkj .img-umkm::before{
     content: '';
     width: 70%;
     height: 40%;
@@ -254,7 +254,7 @@ nav .nav-links li.inNavigate a {
 }
 
 
-.j-akl .img-jurusan::before{
+.j-akl .img-umkm::before{
     content: '';
     z-index: -1;
     width: 100%;
@@ -267,7 +267,7 @@ nav .nav-links li.inNavigate a {
 
 
 
-.j-pm.jurusan-page::before{
+.j-pm.umkm-page::before{
     content: '';
     width: 43%;
     height: calc(30rem + 4rem);
@@ -278,7 +278,7 @@ nav .nav-links li.inNavigate a {
     z-index: -1;
 }
 
-.jurusan-page .img-jurusan img{
+.umkm-page .img-umkm img{
     width:100%;
     height:100%;
     object-fit: cover;
@@ -287,23 +287,23 @@ nav .nav-links li.inNavigate a {
 }
 
 
-.jurusan-page .content-jurusan{
+.umkm-page .content-umkm{
     width: 40%;
     padding: 1rem;
 }
 
-.jurusan-page .content-jurusan li {
+.umkm-page .content-umkm li {
     list-style: none;
 }
 
 
-.content-jurusan h3 {
+.content-umkm h3 {
     font-size: 2rem;
     margin-bottom: .5rem;
     font-weight: 700;
     color: var(--dark-dark-blue);
 }
-.content-jurusan span {
+.content-umkm span {
     color: var(--dark-blue);
     margin-bottom: 1rem;
     display: inline-block;
@@ -311,17 +311,17 @@ nav .nav-links li.inNavigate a {
     font-size: 1.15rem;
 }
 
-.content-jurusan .pel-jurusan li{
+.content-umkm .pel-umkm li{
     margin-left: 20px;
     position: relative;
     font-weight: 700;
     color: var(--dark-dark-blue);
 }
-.content-jurusan .pel-jurusan li + li {
+.content-umkm .pel-umkm li + li {
     margin-top: .6rem;
 }
 
-.content-jurusan .pel-jurusan li::before{
+.content-umkm .pel-umkm li::before{
     content: '';
     position: absolute;
     left: -20px;
@@ -458,14 +458,14 @@ nav .nav-links li.inNavigate a {
 }
 
 @media (max-width: 1085px){
-    .jurusan-page .content-jurusan{
+    .umkm-page .content-umkm{
         width: 25rem;
     }
-    .j-tkj .img-jurusan::before{
+    .j-tkj .img-umkm::before{
         width: calc(100% + 3rem);
     }
 
-    .j-akl .img-jurusan::before{
+    .j-akl .img-umkm::before{
         content: '';
         z-index: -1;
         width: calc(100% + 2rem);
@@ -474,7 +474,7 @@ nav .nav-links li.inNavigate a {
         right: -1rem;
     }
 
-    .j-pm.jurusan-page::before {
+    .j-pm.umkm-page::before {
         width: 100vw;
         left: -8rem;
     }
@@ -543,7 +543,7 @@ nav .nav-links li.inNavigate a {
     .logo h3 {
         font-size: 1.15rem;
     }
-    .j-pm.jurusan-page::before {
+    .j-pm.umkm-page::before {
         width: 100vw;
         left: -5rem;
     }
@@ -553,24 +553,24 @@ nav .nav-links li.inNavigate a {
     section {
         padding: 8rem 3rem;
     }
-    .container-jurusan h1 {
+    .container-umkm h1 {
         font-size: 2.2rem;
     }
     nav .nav-links li a{
         font-size: 16px;
     }
-    .content-jurusan h3 {
+    .content-umkm h3 {
         font-size: 1.7rem;
         margin-bottom: .5rem;
     }
-    .content-jurusan span {
+    .content-umkm span {
         color: var(--dark-blue);
         margin-bottom: 1rem;
         display: inline-block;
         font-size: 1rem;
     }
 
-    .content-jurusan .pel-jurusan li{
+    .content-umkm .pel-umkm li{
         position: relative;
     }
 
@@ -582,7 +582,7 @@ nav .nav-links li.inNavigate a {
     .footer .logo h4 {
         font-size: 1.3rem;
     }
-    .j-pm.jurusan-page::before {
+    .j-pm.umkm-page::before {
         width: 100vw;
         left: -3rem;
     }
@@ -595,14 +595,14 @@ nav .nav-links li.inNavigate a {
     nav .nav-links li a{
         font-size: 16px !important;
     }
-    .jurusan-page .img-jurusan {
+    .umkm-page .img-umkm {
         height: 25rem;
         width: 20rem;
     }
-    .j-pm.jurusan-page::before{
+    .j-pm.umkm-page::before{
         height: calc(25rem + 4rem);
     }
-    .content-jurusan .pel-jurusan li {
+    .content-umkm .pel-umkm li {
         font-size: .9rem;   
     }
 
@@ -610,7 +610,7 @@ nav .nav-links li.inNavigate a {
         margin-left: 8px;
         font-size: 1.1rem;
     }
-    .j-pm.jurusan-page::before {
+    .j-pm.umkm-page::before {
         width: 100vw;
         left: -2rem;
     }
@@ -632,22 +632,22 @@ nav .nav-links li.inNavigate a {
     .nav .logo h3 {
         font-size: .9rem;
     }
-    .jurusan-page .img-jurusan {
+    .umkm-page .img-umkm {
         height: 20rem;
         width: 15rem;
         margin: auto;
     }
-    .j-pm.jurusan-page::before{
+    .j-pm.umkm-page::before{
         height: calc(20rem + 4rem);
     }
 
-    .content-jurusan .pel-jurusan li {
+    .content-umkm .pel-umkm li {
         font-size: .8rem;   
     }
-    .content-jurusan h3 {
+    .content-umkm h3 {
         font-size: 1.5rem;
     }
-    .content-jurusan span {
+    .content-umkm span {
         font-size: .9rem;
     }
 

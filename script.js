@@ -45,10 +45,10 @@ burger.addEventListener('click', function(){
 })
 
 
-// jurusan
-const jurusanCards = document.querySelectorAll('.jurusan-card')
+// umkm
+const umkmCards = document.querySelectorAll('.umkm-card')
 
-jurusanCards.forEach(card=>card.addEventListener('click', function(){
+umkmCards.forEach(card=>card.addEventListener('click', function(){
     this.classList.toggle('open-view');  
 }));
 
@@ -68,7 +68,7 @@ let about = document.querySelector('.about-content');
 let headings = document.querySelectorAll('.heading');
 let prestasiCards = document.querySelectorAll('#prestasi .image');
 let extraCards = document.querySelectorAll('#ekstrakulikuler .card');
-let newsCards = document.querySelectorAll('#berita .card-news');
+let newsCards = document.querySelectorAll('#galeri .card-news');
 let footerCols = document.querySelectorAll('.footer .footer-col');
 
 let observer1 = new IntersectionObserver(entries=>{
@@ -84,7 +84,7 @@ let observer1 = new IntersectionObserver(entries=>{
 
 observer1.observe(about);
 
-let object = [headings, jurusanCards, prestasiCards, extraCards, newsCards, footerCols];
+let object = [headings, umkmCards, prestasiCards, extraCards, newsCards, footerCols];
 
 object.forEach(obj=>{
     obj.forEach(element => {
@@ -105,10 +105,10 @@ objectTransition.forEach(objT=>{
 // for active links
 let homeSection = document.querySelector('#home');
 let aboutSection = document.querySelector('#tentang');
-let jurusanSection = document.querySelector('#jurusan');
+let umkmSection = document.querySelector('#umkm');
 let prestasiSection = document.querySelector('#prestasi');
 let extraSection = document.querySelector('#ekstrakulikuler');
-let beritaSection = document.querySelector('#berita');
+let galeriSection = document.querySelector('#galeri');
 const navLinksLi = document.querySelectorAll('nav .nav-links li');
 let navLinksLiInNavigation = document.querySelector('nav .nav-links li.inNavigate');
 
@@ -134,7 +134,7 @@ function giveClickEventLi(li, index, sections){
     })
 }
 
-const sectionObserverObjects = [homeSection, aboutSection, jurusanSection, prestasiSection, extraSection, beritaSection];
+const sectionObserverObjects = [homeSection, aboutSection, umkmSection, prestasiSection, extraSection, galeriSection];
 const observerSection = new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
         if(entry.isIntersecting){
