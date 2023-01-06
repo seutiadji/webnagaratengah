@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Desa</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/ikon.css">
+    <link rel="shortcut icon" href="img/logo1.png">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+</head>
+<body>
+    <div class="page" id="page">
+        <!-- nav start -->
+        <nav id="nav" class="nav">
+            <a href='index.html#home' class="logo">  
+                <img src="img/logo1.png" alt="img">
+                <h3 class="">Desa Nagaratengah</h3>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">beranda</a></li>
+                <li><a href="index.html#tentang">maps</a></li>
+                <li class="inNavigate"><a href="index.html#ikon">Tentang desa</a></li>
+                <li><a href="index.html#prestasi">UMKM</a></li>
+                <li><a href="index.html#ekstrakulikuler">Tentang Desa</a></li>
+                <li><a href="index.html#galeri">Potensi</a></li>
+            </ul>
+
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- nav end -->
+        
+        <section class="container-ikon">
+            <h1 id="judul-ikon">Tentang Desa</h1>
+
+            <div class="ikon-page j-iko" id="tkj">
+                <div class="img-ikon">
+                    <img src="img/struktur.png" alt="iko">
+                </div>
+                <div class="content-ikon">
+                    <h3>Struktur Organisasi</h3>
+                    <span>Struktur Organisasi Desa Nagaratengah</span>
+                    <ul class="pel-ikon">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ikon-page j-ide" id="ide">
+                <div class="img-ikon">
+                    <img src="img/posyandu.jpg" alt="iko">
+                </div>
+                <div class="content-ikon">
+                    <h3>Posyandu</h3>
+                    <span>Kegiatan Posyandu yang rutin dilakukan satu minggu sekali</span>
+                    <ul class="pel-ikon">
+                        <li>Program kesehatan ibu hamil</li>
+                        <li>Program kesehatan anak</li>
+                        <li>Keluarga Berencana (KB)</li>
+                        <li>Imunisasi</li>
+                        <li>Pemantauan status gizi</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="ikon-page j-glr" id="glr">
+                <div class="img-ikon">
+                    <img src="img/posyandu.jpg" alt="iko">
+                </div>
+                <div class="content-ikon">
+                    <h3>Posyandu</h3>
+                    <span>Kegiatan Posyandu yang rutin dilakukan satu minggu sekali</span>
+                    <ul class="pel-ikon">
+                        <li>Program kesehatan ibu hamil</li>
+                        <li>Program kesehatan anak</li>
+                        <li>Keluarga Berencana (KB)</li>
+                        <li>Imunisasi</li>
+                        <li>Pemantauan status gizi</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col main-col">
+                        <div class="title">
+                            <img src="img/logo1.png" alt="">
+                            <div class="logo">
+                                <h4>Desa Nagaratengah</h4>
+                            </div>
+                        </div>
+                        <p>SMK Kristen Immanuel menjadi unit Sekolah Kristen Immanuel yang sangat bersemangat mengembangkan bakat siswa serta membentuk produk teknologi dan pengembangan bisnis dari setiap peserta didik. Dijiwai motto yang kuat, sekolah ini membawa keluarga besarnya untuk sukses.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Tautan</h4>
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#tentang">Tentang Kami</a></li>
+                            <li><a href="index.html#ikon">ikon</a></li>
+                            <li><a href="index.html#prestasi">Prestasi</a></li>
+                            <li><a href="index.html#ekstrakulikuler">Ekstrakulikuler</a></li>
+                            <li><a href="index.html#galeri">galeri Terbaru</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="https://www.tiktok.com/@smkimmanuelptk"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="https://www.youtube.com/c/SMKImmanuelPontianak"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/smkimmanuelptk/"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        window.onscroll = function(){
+            const nav = document.querySelector('#nav');
+            const fixedNav = nav.offsetTop;
+
+            if (window.pageYOffset > fixedNav){
+                nav.classList.add('navbar-fixed');
+            }else {
+                nav.classList.remove('navbar-fixed');
+            }   
+        }
+
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('nav .nav-links')
+        burger.addEventListener('click', function(){
+            burger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+
+
+    </script>
+</body>
+</html>

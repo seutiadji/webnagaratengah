@@ -120,7 +120,7 @@ html {
 /* cursor start */
 
 #cursor {
-    pointer-events: none;
+    pointer-events:visiblePainted;
     width: 100px;
     height: 100px;
     border: 4px solid var(--cursor-main);
@@ -495,7 +495,7 @@ section {
 }
 
 .home .content h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-transform: capitalize;
     position: relative;
     margin-bottom: .2rem; 
@@ -515,7 +515,7 @@ section {
 
 
 .home .content h3 {
-    font-size: 28px;
+    font-size: 20px;
     text-transform: capitalize;
     font-weight: 500;
 }
@@ -541,7 +541,7 @@ section {
 }
 
 .cta-btn:hover{
-    opacity: .8;
+    opacity: .2;
 }
 
 
@@ -558,11 +558,12 @@ section {
     padding-bottom: 10rem;
     width: 100%;
     overflow-x: hidden;
+    
 }
 .about .visi {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -573,34 +574,24 @@ section {
 }
 
 
-
-.about .visi::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 2.5rem;
-    height: 6rem;
-    background: #d5deef;
-}
-
 .about .visi h2 {
     width: 20%;
-    font-size: 25px;
+    font-size: 35px;
     color: #1a1a1a;
 
 }
 
 .about .visi p {
-    width: 70%;
-    max-width: 40rem;
+    width: 50%;
+    font-size: 20px;
+    max-width: 20rem;
     position: relative;
     color: #1a1a1a;
 }
 .about .visi p::before{
     content: '';
     position: absolute;
-    left: -30px;
+    left: -20px;
     width: 5px;
     height: 100%;
     border-radius: 100px;
@@ -609,67 +600,165 @@ section {
 
 
 .about .about-content {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10rem;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
-    margin-top: 4rem;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.about .about-content .image {
-    width: 40%;
-    height: 25rem;
-    box-shadow: 0 5px 5px rgba(0,0,0,.2);
-    border-radius: 0% 50px 20px 0%;
+.about .about-content iframe {
+    width: 80%;
+    height: 90%;
+    top: 1px;
+}
+
+
+
+/* about section end */
+
+
+/* ikon desa section */
+.ikon {
+    position: relative;
+    z-index:1;
+}
+.ikon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: var(--dark-blue);
+    z-index: -1;
+}
+
+.ikon-cards {
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.ikon-card {
+    width: 60rem;
+    position: relative;
+    background: white;
+    padding: 6rem 1rem 4rem;
+    border-radius: 5px;
+    box-shadow: 0 6px 5px rgba(0,0,0,.1);
     overflow: hidden;
 }
 
-.about-content .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.about .about-content .content-box {
-    position: absolute;
-    width: 80%;
-    padding: 1rem 14rem;
-    background: white;
-    left: 70%;
-    transform: translateX(-50%);
-    z-index: -1;
-    height: 30rem;
-
+.ikon .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 2rem;
+    background-color: var(--light-blue);
+    margin: 0 auto 1.5rem;
 }
 
-
-.about .about-content .content-box h2 {
-    font-size:2.4rem;
-    position: relative;
-    color: #4e4b56;
+.ikon .iko .logo {
+    background: var(--dark-blue);
+}
+.ikon .ide .logo {
+    background: #1a536d;
+}
+.ikon .glr .logo {
+    background: #c5452e;
+}
+.ikon-card .content p, .ikon-card .content h3 {
+    text-align: center;
 }
 
-.about .about-content .content-box h2::before{
+.ikon-card .content h3{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    color: #3a3842;
+    position:relative;
+}
+.ikon-card .content h3::before{
     content: '';
     position: absolute;
-    bottom: -.45rem;
     left: 0;
-    width: 40%;
-    background: var(--dark-blue);
-    height: .2rem;
-    border-radius: 100px;
+    bottom: -.5rem;
+    transform: scaleX(.2);
+    width: 100%;
+    height: 2px;
+    background: var(--dark-dark-blue);
 }
 
-.about .about-content .content-box p {
-    margin: 1.5rem 0;
-    max-width: 35rem;
-    color: #1a1a1a;
+.ikon-card .content p {
+    font-size: .9rem;
+    color: #55564b;
 }
-/* about section end */
+
+.ikon-card .action {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: var(--clr-white);
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: var(--dark-blue);
+    line-height: 50px;
+    transform: translateY(35px);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.ide.ikon-card .action {
+    background: #1a536d;
+}
+.glr.ikon-card .action {
+    background: #c5452e;
+}
+.ikon-card:hover .action {
+    transform: translateY(0);
+}
+
+.ikon-card.open-view .action {
+    transform: translateY(0);
+}
+
+.ikon-card .action:hover{
+    opacity: .8;
+} 
+/* ikon end */
+
+/* heading for all section */   
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading h2 {
+    font-size: 2.8rem;
+    color: var(--dark-blue);
+}
+#ikon .heading h2 {
+    color: var(--clr-white);
+}
+
+.heading span {
+    font-size: 1.2rem;
+    color: var(--light-blue);
+    text-transform: uppercase;
+}
 
 
 /* umkm section */
@@ -728,7 +817,9 @@ section {
 .umkm .pm .logo {
     background: #f5a225;
 }
-
+.umkm .ad .logo {
+    background: #f55625;
+}
 .umkm-card .content p, .umkm-card .content h3 {
     text-align: center;
 }
@@ -780,7 +871,9 @@ section {
 .pm.umkm-card .action {
     background: #f5a225;
 }
-
+.ad.umkm-card .action {
+    background: #f55625;
+}
 .umkm-card:hover .action {
     transform: translateY(0);
 }
@@ -897,8 +990,8 @@ section{
 
 
 
-/* ekstrakulikuler section start*/
-#ekstrakulikuler{
+/* potensi section start*/
+#potensi{
     background: transparent;
 }
 .extra .card-lists {
@@ -1177,7 +1270,7 @@ section{
 
 /* intersection observer start*/
 
-.about .about-content, #ekstrakulikuler .card{
+.about .about-content, #potensi .card{
     transform: translateY(-50px);
     opacity:0;
 }
@@ -1216,7 +1309,7 @@ section{
 .umkm-cards .umkm-card:last-child, .achievments-container .our-gallery .image:last-child{
     transition: .3s linear .6s;
 } 
-.umkm-card.animate, .achievments-container .our-gallery .image.animate, #ekstrakulikuler .card.animate, .card-news.animate, .footer-col.animate{
+.umkm-card.animate, .achievments-container .our-gallery .image.animate, #potensi .card.animate, .card-news.animate, .footer-col.animate{
     opacity: 1;
     transform: translateY(0);
 }
@@ -1267,10 +1360,7 @@ section{
     }
 
 
-    .about .about-content .content-box {
-        padding: 1rem 11rem;
-    }
-
+    .
     .about .visi::before{
         content: '';
         position: absolute;
@@ -1430,37 +1520,7 @@ section{
         border-radius: 20px 20px;
     }
     
-    .about .about-content .content-box {
-        height: auto;
-        position:static;
-        width: 100%;
-        padding: 3rem 0rem;
-        transform: translateX(0);
-        /* z-index: -1; */
     
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    
-    
-    .about .about-content .content-box h2::before{
-        content: '';
-        position: absolute;
-        bottom: -.45rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 12%;
-        background: var(--dark-blue);
-        height: .25rem;
-        border-radius: 100px;
-    }
-
-    .about .about-content .content-box p {
-        padding: 0 2rem;
-    }
 
     .umkm-card {
         width: calc(100%/2 - 24px);
