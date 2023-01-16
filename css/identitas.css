@@ -204,12 +204,12 @@ nav .nav-links li.inNavigate a {
 
 /* nav end */
 
-.container-umkm {
+.container-desa {
     width: 100vw;
     overflow: hidden;
 }
 
-.container-umkm h1 {
+.container-desa h1 {
     text-align: center;
     font-size: 3rem;
     color: var(--dark-dark-blue);
@@ -218,7 +218,7 @@ nav .nav-links li.inNavigate a {
     font-weight: 700;
 }
 
-.umkm-page {
+.desa-page {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -229,56 +229,24 @@ nav .nav-links li.inNavigate a {
     position: relative;
     /* line up there for pm design */
 }
-.j-akl.umkm-page {
+.j-akl.desa-page {
     flex-direction: row-reverse;
 }
 
-.j-ad.umkm-page {
+.j-crg.desa-page {
     flex-direction: row-reverse;
 }
 
-/* .j-ad.umkm-page {
-    flex-direction: row-reverse;
-} */
-
-
-
-.umkm-page .img-umkm{
-    width: 25rem;
-    height: 30rem;
-    position: relative;
-    z-index: 1;
-    box-shadow: 2px 5px 10px rgba(0,0,0,.1);
-    /* margin: auto; */
+.desa-page .img-desa{
+    width: 51rem;
+    margin-left: -50%;
+     
 
 }
-.j-tkj .img-umkm::before{
+.j-tkj .img-desa::before{
     content: '';
     width: 70%;
     height: 40%;
-    background: var(--dark-blue);
-    position: absolute;
-    bottom: -1.5rem;
-    left: -1.5rem;
-    z-index: -1;
-}
-
-.j-pm .img-umkm::before{
-    content: '';
-    width: 70%;
-    height: 40%;
-    background: var(--dark-blue);
-    position: absolute;
-    bottom: -1.5rem;
-    left: -1.5rem;
-    z-index: -1;
-}
-
-.j-op .img-umkm::before{
-    content: '';
-    width: 70%;
-    height: 40%;
-    background: var(--dark-blue);
     position: absolute;
     bottom: -1.5rem;
     left: -1.5rem;
@@ -286,29 +254,9 @@ nav .nav-links li.inNavigate a {
 }
 
 
-.j-akl .img-umkm::before{
-    content: '';
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: -1.5rem;
-    right: -1.5rem;
-    border: 1px solid var(--dark-dark-blue);
-}
 
-.j-ad .img-umkm::before{
-    content: '';
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: -1.5rem;
-    right: -1.5rem;
-    border: 1px solid var(--dark-dark-blue);
-}
 
-.j-crg .img-umkm::before{
+.j-crg .img-desa::before{
     content: '';
     z-index: -1;
     width: 100%;
@@ -321,7 +269,7 @@ nav .nav-links li.inNavigate a {
 
 
 
-/* .j-pm.umkm-page::before{
+/* .j-pm.desa-page::before{
     content: '';
     width: 43%;
     height: calc(30rem + 4rem);
@@ -332,7 +280,7 @@ nav .nav-links li.inNavigate a {
     z-index: -1;
 } */
 
-/* .j-ad.umkm-page::before{
+.j-ad.desa-page::before{
     content: '';
     width: 43%;
     height: calc(30rem + 4rem);
@@ -341,62 +289,76 @@ nav .nav-links li.inNavigate a {
     left: -10rem;
     background-color: var(--dark-blue);
     z-index: -1;
-} */
+}
 
-.umkm-page .img-umkm img{
+.desa-page .img-desa img{
     width:100%;
     height:100%;
-    object-fit: cover;
-    margin: auto;
-    display: block;
+    padding-left: -60%;
+    margin-top: 2%;
+    margin-right: -50%;
+ 
 }
 
 
-.umkm-page .content-umkm{
+.desa-page .content-desa{
     width: 40%;
     padding: 1rem;
 }
 
-.umkm-page .content-umkm li {
+.desa-page .content-desa li {
     list-style: none;
 }
 
 
-.content-umkm h3 {
+.content-desa h3 {
     font-size: 2rem;
     margin-bottom: .5rem;
     font-weight: 700;
     color: var(--dark-dark-blue);
 }
-.content-umkm span {
-    color: var(--dark-blue);
+.content-desa span {
+    color: var(--dark-dark-blue);
     margin-bottom: 1rem;
-    display: inline-block;
+    margin-left: -70%;
     font-weight: 700;
     font-size: 1.15rem;
 }
+.content-desa p {
+    color: var(--dark-dark-blue);
+    margin-bottom: rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin-left: -70%;
+    width: 250%;
+    text-align: justify;
+}
 
-.content-umkm .pel-umkm li{
+.content-desa .pel-desa li{
     margin-left: 20px;
+    margin-left: -60%;
+    font-size: 1.15rem;
     position: relative;
-    font-weight: 700;
+    font-weight: 500;
+    margin-bottom: -5%;
     color: var(--dark-dark-blue);
 }
-.content-umkm .pel-umkm li + li {
-    margin-top: .6rem;
+.content-desa .pel-desa li + li {
+    margin-top: .1rem;
+    
 }
 
-.content-umkm .pel-umkm li::before{
-    content: '';
-    position: absolute;
-    left: -20px;
-    width: 10px;
-    height: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background: var(--dark-blue);
+.content-desa .button-desa {
+    padding-top: 6%;
+   padding-right: 60%;
+  
 }
+
+/* .content-desa .pel-desa li::before{
+    content: '1';
+    background: var(--dark-dark-blue);
+} */
 
 
 
@@ -523,19 +485,14 @@ nav .nav-links li.inNavigate a {
 }
 
 @media (max-width: 1085px){
-    .umkm-page .content-umkm{
+    .desa-page .content-desa{
         width: 25rem;
     }
-    .j-tkj .img-umkm::before{
+    .j-tkj .img-desa::before{
         width: calc(100% + 3rem);
     }
 
-    
-    .j-pm .img-umkm::before{
-        width: calc(100% + 3rem);
-    }
-
-    .j-akl .img-umkm::before{
+    .j-akl .img-desa::before{
         content: '';
         z-index: -1;
         width: calc(100% + 2rem);
@@ -544,9 +501,7 @@ nav .nav-links li.inNavigate a {
         right: -1rem;
     }
 
-
-
-    .j-ad .img-umkm::before{
+    .j-crg .img-desa::before{
         content: '';
         z-index: -1;
         width: calc(100% + 2rem);
@@ -555,21 +510,12 @@ nav .nav-links li.inNavigate a {
         right: -1rem;
     }
 
-    .j-crg .img-umkm::before{
-        content: '';
-        z-index: -1;
-        width: calc(100% + 2rem);
-        height: calc(100% + 2rem);
-        bottom: -1rem;
-        right: -1rem;
-    }
-
-    .j-pm.umkm-page::before {
+    .j-pm.desa-page::before {
         width: 100vw;
         left: -8rem;
     }
 
-    .j-crg.umkm-page::before {
+    .j-crg.desa-page::before {
         width: 100vw;
         left: -8rem;
     }
@@ -638,12 +584,7 @@ nav .nav-links li.inNavigate a {
     .logo h3 {
         font-size: 1.15rem;
     }
-    .j-pm.umkm-page::before {
-        width: 100vw;
-        left: -5rem;
-    }
-
-    .j-op.umkm-page::before {
+    .j-pm.desa-page::before {
         width: 100vw;
         left: -5rem;
     }
@@ -653,25 +594,42 @@ nav .nav-links li.inNavigate a {
     section {
         padding: 8rem 3rem;
     }
-    .container-umkm h1 {
+    .container-desa h1 {
         font-size: 2.2rem;
     }
     nav .nav-links li a{
         font-size: 16px;
     }
-    .content-umkm h3 {
+    .content-desa h3 {
         font-size: 1.7rem;
         margin-bottom: .5rem;
-    }
-    .content-umkm span {
-        color: var(--dark-blue);
-        margin-bottom: 1rem;
-        display: inline-block;
-        font-size: 1rem;
+        margin-left: 2%;
+        margin-top: -15%;
     }
 
-    .content-umkm .pel-umkm li{
-        position: relative;
+    .content-desa p {
+        font-size: 0.9rem;
+        margin-bottom: .5rem;
+        width: 80%;
+        margin-left: 10%;
+        text-align: justify;
+
+    }
+
+    .content-desa span {
+        /* padding-left: -50%; */
+        margin-left: 9%;
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .content-desa .pel-desa li{
+        width: 80%;
+        text-align:justify;
+        margin-left: 10%;
+        font-size: 0.8rem;
+        width: fit-content;
+        /* margin-bottom: -10%; */
     }
 
     .footer-col{
@@ -682,12 +640,7 @@ nav .nav-links li.inNavigate a {
     .footer .logo h4 {
         font-size: 1.3rem;
     }
-    .j-pm.umkm-page::before {
-        width: 100vw;
-        left: -3rem;
-    }
-
-    .j-op.umkm-page::before {
+    .j-pm.desa-page::before {
         width: 100vw;
         left: -3rem;
     }
@@ -700,19 +653,15 @@ nav .nav-links li.inNavigate a {
     nav .nav-links li a{
         font-size: 16px !important;
     }
-    .umkm-page .img-umkm {
-        height: 25rem;
+    .desa-page .img-desa {
+        height: 7rem;
         width: 20rem;
+        margin-left: 3%;
     }
-    .j-pm.umkm-page::before{
+    .j-pm.desa-page::before{
         height: calc(25rem + 4rem);
     }
-
-    .j-op.umkm-page::before{
-        height: calc(25rem + 4rem);
-    }
-
-    .content-umkm .pel-umkm li {
+    .content-desa .pel-desa li {
         font-size: .9rem;   
     }
 
@@ -720,11 +669,7 @@ nav .nav-links li.inNavigate a {
         margin-left: 8px;
         font-size: 1.1rem;
     }
-    .j-pm.umkm-page::before {
-        width: 100vw;
-        left: -2rem;
-    }
-    .j-op.umkm-page::before {
+    .j-pm.desa-page::before {
         width: 100vw;
         left: -2rem;
     }
@@ -746,22 +691,22 @@ nav .nav-links li.inNavigate a {
     .nav .logo h3 {
         font-size: .9rem;
     }
-    .umkm-page .img-umkm {
+    .desa-page .img-desa {
         height: 20rem;
         width: 15rem;
         margin: auto;
     }
-    .j-pm.umkm-page::before{
+    .j-pm.desa-page::before{
         height: calc(20rem + 4rem);
     }
 
-    .content-umkm .pel-umkm li {
+    .content-desa .pel-desa li {
         font-size: .8rem;   
     }
-    .content-umkm h3 {
+    .content-desa h3 {
         font-size: 1.5rem;
     }
-    .content-umkm span {
+    .content-desa span {
         font-size: .9rem;
     }
 

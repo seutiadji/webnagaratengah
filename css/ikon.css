@@ -17,10 +17,9 @@
     --dark-blue:#3A5987 ;
     --gray-blue: #e4e4e4;   
     --light-blue: #1baaee; */
-
     --clr-white: #e4e4e4;
     --light-blue: #7b9fcf;
-    --dark-blue: #3a5987;
+    --dark-blue: #61876E;
     --dark-dark-blue: #4e4b56;
     --clr-shadow: rgba(0,0,0,.1);
     --light2-blue: #d5deef;
@@ -221,27 +220,37 @@ nav .nav-links li.inNavigate a {
 .ikon-page {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 7rem;
+    align-items: right;
+    margin-bottom: 1rem;
     justify-content: center;
-    gap: 3rem;
+    gap: rem;
 
     position: relative;
     /* line up there for pm design */
 }
-.j-akl.ikon-page {
+.j-iko.ikon-page {
     flex-direction: row-reverse;
+}
+.ikon-page .img-ikons{
+    width: 0rem;
+    height: 0rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 2px 5px 10px rgba(26, 26, 26, 0.884);
+    
+
 }
 
 .ikon-page .img-ikon{
-    width: 25rem;
-    height: 30rem;
+    width: 32rem;
+    height: 20rem;
     position: relative;
     z-index: 1;
-    box-shadow: 2px 5px 10px rgba(0,0,0,.1);
+    box-shadow: 2px 5px 10px rgba(26, 26, 26, 0.884);
     /* margin: auto; */
 
 }
+
 .j-iko .img-ikon::before{
     content: '';
     width: 0%;
@@ -299,7 +308,7 @@ nav .nav-links li.inNavigate a {
 
 
 .ikon-page .content-ikon{
-    width: 40%;
+    width: 50%;
     padding: 1rem;
 }
 
@@ -307,10 +316,9 @@ nav .nav-links li.inNavigate a {
     list-style: none;
 }
 
-
 .content-ikon h3 {
     font-size: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;
     font-weight: 700;
     color: var(--dark-dark-blue);
 }
@@ -319,7 +327,8 @@ nav .nav-links li.inNavigate a {
     margin-bottom: 1rem;
     display: inline-block;
     font-weight: 700;
-    font-size: 1.15rem;
+    font-size: 0.9rem;
+    padding: 0%;
 }
 
 .content-ikon .pel-ikon li{
@@ -345,7 +354,7 @@ nav .nav-links li.inNavigate a {
 }
 
 
-
+/* footer start*/
 .footer{
     padding: 60px 0;
     background: var(--dark-blue);         
@@ -374,9 +383,11 @@ nav .nav-links li.inNavigate a {
     align-items: center;
     margin-bottom: 1rem;
 }
+
+
 .footer .title h4 {
     font-size: 1.25rem;
-    margin-bottom: 0rem;
+    margin-bottom: 6rem;
 }
 
 .footer h4{
@@ -403,14 +414,13 @@ nav .nav-links li.inNavigate a {
 }
 .footer .main-col h4::before{
     display: none;
-} 
+}
 .footer ul li {
     list-style: none;
 }
 .footer ul li + li {
-    margin-top: 10px;
+    margin-top: 1px;
 }
-
 
 .footer ul li a{
     color: var(--clr-white);
@@ -424,8 +434,6 @@ nav .nav-links li.inNavigate a {
     padding-left: 10px;
 }
 
-
-
 .footer-col {
     width: 25%;
     padding: 2rem;
@@ -433,7 +441,6 @@ nav .nav-links li.inNavigate a {
 .main-col {
     width: 45%;
 }
-
 
 .footer-col:last-child ul {
     display: flex;
@@ -464,7 +471,7 @@ nav .nav-links li.inNavigate a {
 /* media breakpoints */
 @media (max-width: 1200px){
     section{
-        padding: 8rem 8rem;
+        padding: 1rem 1rem;
     }
 }
 
@@ -473,7 +480,7 @@ nav .nav-links li.inNavigate a {
         width: 25rem;
     }
     .j-iko .img-ikon::before{
-        width: calc(100% + 3rem);
+        width: calc(100% + 2rem);
     }
 
     .j-ide .img-ikon::before{
@@ -502,7 +509,7 @@ nav .nav-links li.inNavigate a {
     }
     nav .nav-links {
         background: white;
-        width: 80%;
+        width: 60%;
         box-shadow: -10px 0 10px rgba(0,0,0,.1);
         position: absolute;
         top: 0;

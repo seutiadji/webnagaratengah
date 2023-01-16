@@ -558,6 +558,7 @@ section {
     padding-bottom: 10rem;
     width: 100%;
     overflow-x: hidden;
+    margin-top: 4%;
     
 }
 .about .visi {
@@ -575,7 +576,8 @@ section {
 
 
 .about .visi h2 {
-    width: 20%;
+    width: 80%;
+    text-align: center;
     font-size: 35px;
     color: #1a1a1a;
 
@@ -608,6 +610,14 @@ section {
     flex-direction: column;
 }
 
+.about .about-content img {
+    width: 70%;
+    margin-top:-5%;
+    margin-left: 16%;
+    margin-bottom: 3%;
+}
+
+
 .about .about-content iframe {
     width: 80%;
     height: 90%;
@@ -619,23 +629,23 @@ section {
 /* about section end */
 
 
-/* ikon desa section */
-.ikon {
+/* ikons desa section */
+.ikonss {
     position: relative;
     z-index:1;
 }
-.ikon::before{
+.ikons::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 40%;
+    height: 80%;
     background: var(--dark-blue);
     z-index: -1;
 }
 
-.ikon-cards {
+.ikons-cards {
     margin:auto;
     display: flex;
     flex-wrap: wrap;
@@ -643,7 +653,7 @@ section {
     justify-content: center;
 }
 
-.ikon-card {
+.ikons-card {
     width: 60rem;
     position: relative;
     background: white;
@@ -653,7 +663,7 @@ section {
     overflow: hidden;
 }
 
-.ikon .logo {
+.ikons .logo {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -666,20 +676,20 @@ section {
     margin: 0 auto 1.5rem;
 }
 
-.ikon .iko .logo {
+.ikons .iko .logo {
     background: var(--dark-blue);
 }
-.ikon .ide .logo {
+.ikons .ide .logo {
     background: #1a536d;
 }
-.ikon .glr .logo {
+.ikons .glr .logo {
     background: #c5452e;
 }
-.ikon-card .content p, .ikon-card .content h3 {
+.ikons-card .content p, .ikons-card .content h3 {
     text-align: center;
 }
 
-.ikon-card .content h3{
+.ikons-card .content h3{
     font-weight: bold;
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
@@ -687,7 +697,7 @@ section {
     color: #3a3842;
     position:relative;
 }
-.ikon-card .content h3::before{
+.ikons-card .content h3::before{
     content: '';
     position: absolute;
     left: 0;
@@ -698,12 +708,12 @@ section {
     background: var(--dark-dark-blue);
 }
 
-.ikon-card .content p {
+.ikons-card .content p {
     font-size: .9rem;
     color: #55564b;
 }
 
-.ikon-card .action {
+.ikons-card .action {
     display: block;
     position: absolute;
     left: 0;
@@ -721,24 +731,24 @@ section {
     cursor: pointer;
 }
 
-.ide.ikon-card .action {
+.ide.ikons-card .action {
     background: #1a536d;
 }
-.glr.ikon-card .action {
+.glr.ikons-card .action {
     background: #c5452e;
 }
-.ikon-card:hover .action {
+.ikons-card:hover .action {
     transform: translateY(0);
 }
 
-.ikon-card.open-view .action {
+.ikons-card.open-view .action {
     transform: translateY(0);
 }
 
-.ikon-card .action:hover{
+.ikons-card .action:hover{
     opacity: .8;
 } 
-/* ikon end */
+/* ikons end */
 
 /* heading for all section */   
 .heading {
@@ -750,7 +760,7 @@ section {
     font-size: 2.8rem;
     color: var(--dark-blue);
 }
-#ikon .heading h2 {
+#ikons .heading h2 {
     color: var(--clr-white);
 }
 
@@ -765,6 +775,7 @@ section {
 .umkm {
     position: relative;
     z-index:1;
+    margin-bottom: -10%;
 }
 .umkm::before{
     content: '';
@@ -772,7 +783,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 70%;
     background: var(--dark-blue);
     z-index: -1;
 }
@@ -923,7 +934,7 @@ section{
     z-index: -1;
 }
 
-.bubble {
+/* .bubble {
     position: absolute;
     top: 15%;
     right: -100px;
@@ -934,7 +945,7 @@ section{
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     z-index: -1;
     background: white;
-}
+} */
 .bubble:last-child {
     bottom: -12%;
     top:auto;
@@ -993,6 +1004,8 @@ section{
 /* potensi section start*/
 #potensi{
     background: transparent;
+    margin-bottom: 10%;
+    margin-top: -10%;
 }
 .extra .card-lists {
     display: grid;
@@ -1493,6 +1506,9 @@ section{
     .about .visi h2 {
         width: 100%;
         text-align: center;
+        font-size:medium;
+        margin-top: -20%;
+        
     }
     .about .visi p {
         width: 100%;
@@ -1508,19 +1524,22 @@ section{
     }
 
     .about .about-content {
-        gap: 0rem;
-        margin-top: 2rem;
+        
+        margin-bottom: -190%;
+  
+
     }
     
     .about .about-content .image {
         width: 100%;
-        transform: scaleX(1.2);
+        margin-right: auto;
+        margin-top: -160%;
+        transform: scaleX(1);
         padding: 0;
         height: 20rem;
         border-radius: 20px 20px;
     }
-    
-    
+
 
     .umkm-card {
         width: calc(100%/2 - 24px);
@@ -1530,7 +1549,7 @@ section{
     }
 
     .umkm::before {
-        height: 21rem;
+        height: 91rem;
     }
 
 
@@ -1756,6 +1775,7 @@ section{
         width: 100%;
         height: 16rem;
     }
+
     #about p {
         font-size: 14px;
     }

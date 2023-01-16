@@ -66,9 +66,9 @@ cardlists.forEach(e=>e.addEventListener('click', function(event){
 // let homeObject = document.querySelectorAll('#home > *');
 let about = document.querySelector('.about-content');
 let headings = document.querySelectorAll('.heading');
-let prestasiCards = document.querySelectorAll('#prestasi .image');
-let extraCards = document.querySelectorAll('#ekstrakulikuler .card');
-let newsCards = document.querySelectorAll('#galeri .card-news');
+let ikondesaCards = document.querySelectorAll('#ikondesa .image');
+let extraCards = document.querySelectorAll('#potensi .card');
+let newsCards = document.querySelectorAll('#potensi .card-news');
 let footerCols = document.querySelectorAll('.footer .footer-col');
 
 let observer1 = new IntersectionObserver(entries=>{
@@ -84,7 +84,7 @@ let observer1 = new IntersectionObserver(entries=>{
 
 observer1.observe(about);
 
-let object = [headings, umkmCards, prestasiCards, extraCards, newsCards, footerCols];
+let object = [headings, umkmCards, ikondesaCards, extraCards, newsCards, footerCols];
 
 object.forEach(obj=>{
     obj.forEach(element => {
@@ -106,9 +106,9 @@ objectTransition.forEach(objT=>{
 let homeSection = document.querySelector('#home');
 let aboutSection = document.querySelector('#tentang');
 let umkmSection = document.querySelector('#umkm');
-let prestasiSection = document.querySelector('#prestasi');
-let extraSection = document.querySelector('#ekstrakulikuler');
-let galeriSection = document.querySelector('#galeri');
+let ikondesaSection = document.querySelector('#ikondesa');
+let extraSection = document.querySelector('#extra');
+let potensiSection = document.querySelector('#potensi');
 const navLinksLi = document.querySelectorAll('nav .nav-links li');
 let navLinksLiInNavigation = document.querySelector('nav .nav-links li.inNavigate');
 
@@ -134,7 +134,7 @@ function giveClickEventLi(li, index, sections){
     })
 }
 
-const sectionObserverObjects = [homeSection, aboutSection, umkmSection, prestasiSection, extraSection, galeriSection];
+const sectionObserverObjects = [homeSection, aboutSection, umkmSection, ikondesaSection, extraSection, potensiSection];
 const observerSection = new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
         if(entry.isIntersecting){

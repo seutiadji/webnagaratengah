@@ -204,21 +204,21 @@ nav .nav-links li.inNavigate a {
 
 /* nav end */
 
-.container-umkm {
+.container-ikons {
     width: 100vw;
     overflow: hidden;
 }
 
-.container-umkm h1 {
+.container-ikons h1 {
     text-align: center;
     font-size: 3rem;
     color: var(--dark-dark-blue);
-    margin-bottom: 3rem;
+    margin-bottom: -29rem;
     letter-spacing: 1px;
     font-weight: 700;
 }
 
-.umkm-page {
+.ikons-page {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -229,55 +229,25 @@ nav .nav-links li.inNavigate a {
     position: relative;
     /* line up there for pm design */
 }
-.j-akl.umkm-page {
+.j-akl.ikons-page {
     flex-direction: row-reverse;
 }
 
-.j-ad.umkm-page {
-    flex-direction: row-reverse;
-}
-
-/* .j-ad.umkm-page {
-    flex-direction: row-reverse;
-} */
-
-
-
-.umkm-page .img-umkm{
-    width: 25rem;
-    height: 30rem;
+.ikons-page .img-ikons{
+    width: 55rem;
+    height: 36rem;
+    margin-bottom: 10%;
     position: relative;
     z-index: 1;
     box-shadow: 2px 5px 10px rgba(0,0,0,.1);
     /* margin: auto; */
 
 }
-.j-tkj .img-umkm::before{
+.j-tkj .img-ikons::before{
     content: '';
     width: 70%;
     height: 40%;
-    background: var(--dark-blue);
-    position: absolute;
-    bottom: -1.5rem;
-    left: -1.5rem;
-    z-index: -1;
-}
-
-.j-pm .img-umkm::before{
-    content: '';
-    width: 70%;
-    height: 40%;
-    background: var(--dark-blue);
-    position: absolute;
-    bottom: -1.5rem;
-    left: -1.5rem;
-    z-index: -1;
-}
-
-.j-op .img-umkm::before{
-    content: '';
-    width: 70%;
-    height: 40%;
+    margin-bottom: 50%;
     background: var(--dark-blue);
     position: absolute;
     bottom: -1.5rem;
@@ -286,29 +256,7 @@ nav .nav-links li.inNavigate a {
 }
 
 
-.j-akl .img-umkm::before{
-    content: '';
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: -1.5rem;
-    right: -1.5rem;
-    border: 1px solid var(--dark-dark-blue);
-}
-
-.j-ad .img-umkm::before{
-    content: '';
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: -1.5rem;
-    right: -1.5rem;
-    border: 1px solid var(--dark-dark-blue);
-}
-
-.j-crg .img-umkm::before{
+.j-akl .img-ikons::before{
     content: '';
     z-index: -1;
     width: 100%;
@@ -321,7 +269,7 @@ nav .nav-links li.inNavigate a {
 
 
 
-/* .j-pm.umkm-page::before{
+.j-pm.ikons-page::before{
     content: '';
     width: 43%;
     height: calc(30rem + 4rem);
@@ -330,9 +278,9 @@ nav .nav-links li.inNavigate a {
     left: -10rem;
     background-color: var(--dark-blue);
     z-index: -1;
-} */
+}
 
-/* .j-ad.umkm-page::before{
+.j-ad.ikons-page::before{
     content: '';
     width: 43%;
     height: calc(30rem + 4rem);
@@ -341,34 +289,45 @@ nav .nav-links li.inNavigate a {
     left: -10rem;
     background-color: var(--dark-blue);
     z-index: -1;
-} */
+}
 
-.umkm-page .img-umkm img{
+.ikons-page .img-ikons img{
     width:100%;
     height:100%;
     object-fit: cover;
     margin: auto;
+    margin-bottom: 0%;
     display: block;
 }
 
 
-.umkm-page .content-umkm{
+.ikons-page .content-ikons{
     width: 40%;
     padding: 1rem;
 }
 
-.umkm-page .content-umkm li {
+.ikons-page .content-ikons li {
     list-style: none;
 }
 
+.ikons-page .content-ikons{
+    width: 40%;
+    padding: 1rem;
+}
 
-.content-umkm h3 {
+
+
+
+.content-ikons h3 {
     font-size: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: -10%;
     font-weight: 700;
     color: var(--dark-dark-blue);
+    align-items: center;
+    margin-left: 20.3%;
+    margin-top: 0%;
 }
-.content-umkm span {
+.content-ikons span {
     color: var(--dark-blue);
     margin-bottom: 1rem;
     display: inline-block;
@@ -376,17 +335,17 @@ nav .nav-links li.inNavigate a {
     font-size: 1.15rem;
 }
 
-.content-umkm .pel-umkm li{
+.content-ikons .pel-ikons li{
     margin-left: 20px;
     position: relative;
     font-weight: 700;
     color: var(--dark-dark-blue);
 }
-.content-umkm .pel-umkm li + li {
+.content-ikons .pel-ikons li + li {
     margin-top: .6rem;
 }
 
-.content-umkm .pel-umkm li::before{
+.content-ikons .pel-ikons li::before{
     content: '';
     position: absolute;
     left: -20px;
@@ -523,19 +482,14 @@ nav .nav-links li.inNavigate a {
 }
 
 @media (max-width: 1085px){
-    .umkm-page .content-umkm{
-        width: 25rem;
+    .ikons-page .content-ikons{
+        width: 12rem;
     }
-    .j-tkj .img-umkm::before{
+    .j-tkj .img-ikons::before{
         width: calc(100% + 3rem);
     }
 
-    
-    .j-pm .img-umkm::before{
-        width: calc(100% + 3rem);
-    }
-
-    .j-akl .img-umkm::before{
+    .j-akl .img-ikons::before{
         content: '';
         z-index: -1;
         width: calc(100% + 2rem);
@@ -544,32 +498,12 @@ nav .nav-links li.inNavigate a {
         right: -1rem;
     }
 
-
-
-    .j-ad .img-umkm::before{
-        content: '';
-        z-index: -1;
-        width: calc(100% + 2rem);
-        height: calc(100% + 2rem);
-        bottom: -1rem;
-        right: -1rem;
-    }
-
-    .j-crg .img-umkm::before{
-        content: '';
-        z-index: -1;
-        width: calc(100% + 2rem);
-        height: calc(100% + 2rem);
-        bottom: -1rem;
-        right: -1rem;
-    }
-
-    .j-pm.umkm-page::before {
+    .j-pm.ikons-page::before {
         width: 100vw;
         left: -8rem;
     }
 
-    .j-crg.umkm-page::before {
+    .j-ad.ikons-page::before {
         width: 100vw;
         left: -8rem;
     }
@@ -638,12 +572,7 @@ nav .nav-links li.inNavigate a {
     .logo h3 {
         font-size: 1.15rem;
     }
-    .j-pm.umkm-page::before {
-        width: 100vw;
-        left: -5rem;
-    }
-
-    .j-op.umkm-page::before {
+    .j-pm.ikons-page::before {
         width: 100vw;
         left: -5rem;
     }
@@ -653,24 +582,30 @@ nav .nav-links li.inNavigate a {
     section {
         padding: 8rem 3rem;
     }
-    .container-umkm h1 {
+    .container-ikons h1 {
         font-size: 2.2rem;
     }
     nav .nav-links li a{
         font-size: 16px;
     }
-    .content-umkm h3 {
-        font-size: 1.7rem;
-        margin-bottom: .5rem;
+    .content-ikons h3 {
+        font-size: 1.8rem;
+        margin-bottom: .1rem;
+        text-align: center;
+        margin-right: 70%;
+        margin-left: -10%;
+        width: 120%;
+        margin-top: -40%;
+        
     }
-    .content-umkm span {
+    .content-ikons span {
         color: var(--dark-blue);
         margin-bottom: 1rem;
         display: inline-block;
         font-size: 1rem;
     }
 
-    .content-umkm .pel-umkm li{
+    .content-ikons .pel-ikons li{
         position: relative;
     }
 
@@ -682,12 +617,7 @@ nav .nav-links li.inNavigate a {
     .footer .logo h4 {
         font-size: 1.3rem;
     }
-    .j-pm.umkm-page::before {
-        width: 100vw;
-        left: -3rem;
-    }
-
-    .j-op.umkm-page::before {
+    .j-pm.ikons-page::before {
         width: 100vw;
         left: -3rem;
     }
@@ -700,31 +630,27 @@ nav .nav-links li.inNavigate a {
     nav .nav-links li a{
         font-size: 16px !important;
     }
-    .umkm-page .img-umkm {
-        height: 25rem;
-        width: 20rem;
+    .ikons-page .img-ikons {
+        height: 15rem;
+        width: 21rem;
+        margin-right: 1%;
+        margin-bottom: 10%;
+        margin-top: -10%;
     }
-    .j-pm.umkm-page::before{
+    .j-pm.ikons-page::before{
         height: calc(25rem + 4rem);
     }
-
-    .j-op.umkm-page::before{
-        height: calc(25rem + 4rem);
-    }
-
-    .content-umkm .pel-umkm li {
+    .content-ikons .pel-ikons li {
         font-size: .9rem;   
     }
-
+    .content-ikons .pel-ikons li {
+        font-size: .9rem;   
+    }
     .logo h3 {
         margin-left: 8px;
         font-size: 1.1rem;
     }
-    .j-pm.umkm-page::before {
-        width: 100vw;
-        left: -2rem;
-    }
-    .j-op.umkm-page::before {
+    .j-pm.ikons-page::before {
         width: 100vw;
         left: -2rem;
     }
@@ -746,22 +672,23 @@ nav .nav-links li.inNavigate a {
     .nav .logo h3 {
         font-size: .9rem;
     }
-    .umkm-page .img-umkm {
+    .ikons-page .img-ikons {
         height: 20rem;
         width: 15rem;
         margin: auto;
     }
-    .j-pm.umkm-page::before{
+    .j-pm.ikons-page::before{
         height: calc(20rem + 4rem);
     }
 
-    .content-umkm .pel-umkm li {
+    .content-ikons .pel-ikons li {
         font-size: .8rem;   
     }
-    .content-umkm h3 {
-        font-size: 1.5rem;
+    .content-ikons h3 {
+        font-size: 1rem;
+    
     }
-    .content-umkm span {
+    .content-ikons span {
         font-size: .9rem;
     }
 
