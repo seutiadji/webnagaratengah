@@ -567,7 +567,7 @@ section {
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    margin-left: 1%;
     position: relative;
     width: 100%;
     height: 12rem;
@@ -580,6 +580,7 @@ section {
     text-align: center;
     font-size: 35px;
     color: #1a1a1a;
+    margin-bottom: -5%;
 
 }
 
@@ -608,13 +609,14 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: -15%;
 }
 
 .about .about-content img {
-    width: 70%;
-    margin-top:-5%;
-    margin-left: 16%;
-    margin-bottom: 3%;
+    width: 60%;
+    margin-top:-15%;
+    margin-left: 20%;
+    margin-bottom: 0%;
 }
 
 
@@ -1501,13 +1503,15 @@ section{
 
     .about .visi {
         height: 14rem;
+        margin-bottom: -10%;
+
     }
     
     .about .visi h2 {
         width: 100%;
         text-align: center;
         font-size:medium;
-        margin-top: -20%;
+        
         
     }
     .about .visi p {
@@ -1524,8 +1528,9 @@ section{
     }
 
     .about .about-content {
-        
-        margin-bottom: -190%;
+        margin-top: 30%;
+        margin-bottom: -200%;
+        /* overflow: clip; */
   
 
     }
