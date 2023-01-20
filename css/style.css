@@ -833,6 +833,10 @@ section {
 .umkm .ad .logo {
     background: #f55625;
 }
+
+.umkm .kt .logo {
+    background: #f55625;
+}
 .umkm-card .content p, .umkm-card .content h3 {
     text-align: center;
 }
@@ -887,6 +891,11 @@ section {
 .ad.umkm-card .action {
     background: #f55625;
 }
+
+.kt.umkm-card .action {
+    background: #f55625;
+}
+
 .umkm-card:hover .action {
     transform: translateY(0);
 }

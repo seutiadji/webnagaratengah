@@ -237,6 +237,10 @@ nav .nav-links li.inNavigate a {
     flex-direction: row-reverse;
 }
 
+.j-kt.umkm-page {
+    flex-direction: row-reverse;
+}
+
 /* .j-ad.umkm-page {
     flex-direction: row-reverse;
 } */
@@ -262,6 +266,7 @@ nav .nav-links li.inNavigate a {
     left: -1.5rem;
     z-index: -1;
 }
+
 
 .j-pm .img-umkm::before{
     content: '';
