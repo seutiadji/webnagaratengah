@@ -1320,7 +1320,7 @@ section{
     opacity: 0; 
     transform: translateY(-50px);
 
-    //default
+    
     transition: .3s linear .1s;
 }
 
@@ -1384,7 +1384,7 @@ section{
     }
 
 
-    .
+    
     .about .visi::before{
         content: '';
         position: absolute;
