@@ -267,8 +267,7 @@ nav .nav-links li.inNavigate a {
     z-index: -1;
 }
 
-
-.j-pm .img-umkm::before{
+.j-op .img-umkm::before{
     content: '';
     width: 70%;
     height: 40%;
@@ -278,8 +277,7 @@ nav .nav-links li.inNavigate a {
     left: -1.5rem;
     z-index: -1;
 }
-
-.j-op .img-umkm::before{
+.j-pm .img-umkm::before{
     content: '';
     width: 70%;
     height: 40%;
@@ -535,12 +533,27 @@ nav .nav-links li.inNavigate a {
         width: calc(100% + 3rem);
     }
 
+    .j-op .img-umkm::before{
+        width: calc(100% + 3rem);
+    }
+
     
     .j-pm .img-umkm::before{
         width: calc(100% + 3rem);
     }
 
+
+
     .j-akl .img-umkm::before{
+        content: '';
+        z-index: -1;
+        width: calc(100% + 2rem);
+        height: calc(100% + 2rem);
+        bottom: -1rem;
+        right: -1rem;
+    }
+
+    .j-kt .img-umkm::before{
         content: '';
         z-index: -1;
         width: calc(100% + 2rem);
@@ -574,6 +587,12 @@ nav .nav-links li.inNavigate a {
         left: -8rem;
     }
 
+    .j-op.umkm-page::before {
+        width: 100vw;
+        left: -8rem;
+    }
+  
+  
     .j-crg.umkm-page::before {
         width: 100vw;
         left: -8rem;
@@ -647,11 +666,11 @@ nav .nav-links li.inNavigate a {
         width: 100vw;
         left: -5rem;
     }
-
     .j-op.umkm-page::before {
         width: 100vw;
         left: -5rem;
     }
+
 }
 
 @media (max-width: 530px){
@@ -691,11 +710,12 @@ nav .nav-links li.inNavigate a {
         width: 100vw;
         left: -3rem;
     }
-
     .j-op.umkm-page::before {
         width: 100vw;
         left: -3rem;
     }
+
+  
 }
 
 @media (max-width: 450px){
@@ -712,11 +732,12 @@ nav .nav-links li.inNavigate a {
     .j-pm.umkm-page::before{
         height: calc(25rem + 4rem);
     }
-
     .j-op.umkm-page::before{
         height: calc(25rem + 4rem);
     }
 
+
+ 
     .content-umkm .pel-umkm li {
         font-size: .9rem;   
     }
@@ -729,10 +750,8 @@ nav .nav-links li.inNavigate a {
         width: 100vw;
         left: -2rem;
     }
-    .j-op.umkm-page::before {
-        width: 100vw;
-        left: -2rem;
-    }
+
+
 
 }
 
